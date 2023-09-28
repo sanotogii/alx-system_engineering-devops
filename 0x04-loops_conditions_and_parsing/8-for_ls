@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# ls
+
+for file in *; do
+    if [[ $file != .* ]]; then
+        echo "${file#*-}"
+    fi
+done
+
