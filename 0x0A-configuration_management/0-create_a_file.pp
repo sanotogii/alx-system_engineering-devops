@@ -1,3 +1,4 @@
+# create a file in /tmp with the content "I love Puppet"
 file { '/tmp/school':
   ensure  => 'file',
   mode    => '0744',
