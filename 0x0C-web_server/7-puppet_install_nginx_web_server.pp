@@ -1,8 +1,7 @@
 # Install Nginx web server (w/ Puppet)
 
 package { 'nginx':
-	ensure => 'installed',
-	require => Exec['update system']
+	ensure => 'installed'
 }
 
 file {'/var/www/html/index.html':
