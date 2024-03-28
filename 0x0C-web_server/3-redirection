@@ -1,0 +1,31 @@
+#!/user/bin/env /bash
+# Configuring nginx
+
+cat > /etc/nginx/sites-available/redirect_me <<EOF
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    root /var/www/html;
+
+    index index.html index.htm index.nginx-debian.html;
+
+    server_name _;
+
+    location /redirect_me {
+        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+    }
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+EOF
+
+
+ln -s /etc/nginx/sites-available/redirect_me /etc/nginx/sites-enabled/
+
+kill -s HUP $(pgrep nginx)
+
+echo "Nginx configured to redirect /redirect_me to another page with a 301 status code."
+
