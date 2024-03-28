@@ -22,10 +22,8 @@ server {
 }
 EOF
 
-
+rm /etc/nginx/sites-enabled/default
 ln -s /etc/nginx/sites-available/redirect_me /etc/nginx/sites-enabled/
 
 kill -s HUP $(pgrep nginx)
-
-echo "Nginx configured to redirect /redirect_me to another page with a 301 status code."
-
+service nginx restart
