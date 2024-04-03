@@ -4,11 +4,11 @@ package { 'nginx':
 }
 
 # Create a custom Nginx configuration file for the custom header
-file { '/etc/nginx/conf.d/custom_header.conf':
-  ensure  => present,
-  content => 'add_header X-Served-By $hostname;',
-  require => Package['nginx'],
-}
+file { 'header_served_by':
+  path  => '/etc/nginx/sites-available/default',
+  match => '^server {',
+  line  => "server {\n\tadd_header X-Served-By \"${hostname}\";",
+  multiple => false,
 
 # Restart Nginx service to apply the changes
 service { 'nginx':
