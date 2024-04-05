@@ -2,3 +2,4 @@
 # The script configures, and restarts Nginx to ensure it listens on port 80 for the default server.
 sed -i 's/listen 80;/listen 80 default_server;/g' /etc/nginx/sites-available/default
 service nginx restart
+kill "$(pgrep 'nginx' | head -1)"
