@@ -33,6 +33,11 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
+frontend front
+    bind *:80
+    mode http
+    redirect scheme https code 301 if !{ ssl_fc }
+
 frontend www-https
     bind *:443 ssl crt /etc/will_do_it_later
     reqadd X-Forwarded-Proto:\ https
