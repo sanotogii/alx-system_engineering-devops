@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# The script configures, and restarts Nginx to ensure it listens on port 80 for the default server.
-ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service nginx restart
-kill "$(pgrep 'nginx' | head -1)"
