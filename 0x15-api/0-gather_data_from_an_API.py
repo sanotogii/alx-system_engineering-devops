@@ -31,4 +31,4 @@ if __name__ == '__main__':
     print('Employee {} is done with tasks({}/{}):'.format(employee, done,
                                                           total))
     for i in title:
-        print('\t {}'.format(i))
+        print('     {}'.format(i))
