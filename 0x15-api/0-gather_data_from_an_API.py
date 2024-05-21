@@ -25,12 +25,10 @@ if __name__ == '__main__':
         if item.get('userId') == _id:
             if item.get('completed') is True:
                 done += 1
-                title += '\t'
-                title += item.get('title')
-                title += '\n'
+                title.append(item.get("title", None))
             total += 1
 
     print('Employee {} is done with tasks({}/{}):'.format(employee, done,
                                                           total))
     for i in title:
-        print(i, end='')
+        print('\t {}'.format(i))
