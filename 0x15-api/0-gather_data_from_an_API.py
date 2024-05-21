@@ -30,7 +30,7 @@ if __name__ == '__main__':
                 title += '\n'
             total += 1
 
-    print('Employee {} is done with tasks({}/{})'.format(employee, done,
+    print('Employee {} is done with tasks({}/{}):'.format(employee, done,
                                                          total))
     for i in title:
         print(i, end='')
