@@ -5,10 +5,12 @@
  returns information about his/her TODO list progress.
 """
 
-import requests
-import sys
+
 
 if __name__ == '__main__':
+    import requests
+    import sys
+
     _id = int(sys.argv[1])
     done = 0
     total = 0
