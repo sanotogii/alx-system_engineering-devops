@@ -3,5 +3,4 @@
 
 exec { 'Change':
 command => 'sed -i "s/holberton/" /etc/security/limits.conf',
-path    => '/usr/local/bin/:/bin/'
-}
+path    => '/usr/local/bin/:/bin/'}
