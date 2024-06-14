@@ -1,6 +1,6 @@
 ### Postmortem: E-commerce Website Outage on May 22, 2023
 
-<img src="/img/cat-1.jpeg" alt="">
+<img src="cat-1.jpeg" alt="">
 #### Issue Summary
 
 **Duration:** 2023-05-22 11:00 GMT+1 to 2023-05-22 15:30 GMT+1 (4.5 hours)
