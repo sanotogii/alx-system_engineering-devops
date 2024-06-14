@@ -1,5 +1,4 @@
 ### Postmortem: E-commerce Website Outage on May 22, 2023
-![cat](/home/sano/alx/alx-system_engineering-devops/0x19-postmortem/img/cat-1.jpeg)
 
 <img src="/img/cat-1.jpeg" alt="">
 #### Issue Summary
