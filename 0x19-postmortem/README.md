@@ -1,5 +1,5 @@
 ### Postmortem: E-commerce Website Outage on May 22, 2023
-![Description of the GIF](https://tenor.com/view/cool-fun-white-cat-dance-cool-and-fun-times-gif-16435335956387921912)
+![Funny cat](/gif/fellersca-new-issue-dropped.gif)
 #### Issue Summary
 
 **Duration:** 2023-05-22 11:00 GMT+1 to 2023-05-22 15:30 GMT+1 (4.5 hours)
