@@ -1,7 +1,7 @@
 ### Postmortem: E-commerce Website Outage on May 22, 2023
 ![cat](/home/sano/alx/alx-system_engineering-devops/0x19-postmortem/img/cat-1.jpeg)
 
-<div class="tenor-gif-embed" data-postid="16435335956387921912" data-share-method="host" data-aspect-ratio="0.564257" data-width="100%"><a href="https://tenor.com/view/cool-fun-white-cat-dance-cool-and-fun-times-gif-16435335956387921912">Cool Fun GIF</a>from <a href="https://tenor.com/search/cool-gifs">Cool GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<img src="/img/cat-1.jpeg" alt="">
 #### Issue Summary
 
 **Duration:** 2023-05-22 11:00 GMT+1 to 2023-05-22 15:30 GMT+1 (4.5 hours)
