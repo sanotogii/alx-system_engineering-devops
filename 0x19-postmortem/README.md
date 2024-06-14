@@ -10,6 +10,7 @@
 **Root Cause:** The website's infrastructure was unable to handle the sudden spike in traffic during a major sales event, resulting in resource exhaustion and cascading failures.
 
 #### Timeline
+<img src="cat-2.jpeg" alt="">
 
 - **11:15 GMT+1:** Customers started reporting slow website performance and timeouts on social media and support channels.
 - **11:30 GMT+1:** The monitoring system triggered alerts for high CPU and memory usage on the web servers.
